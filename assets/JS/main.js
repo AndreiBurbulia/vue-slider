@@ -12,6 +12,7 @@ const app = new Vue({
             "./assets/img/img_4.jpg",
             "./assets/img/img_5.jpg"
         ],
+        prova: "white"
     },
 
     methods:
@@ -28,9 +29,26 @@ const app = new Vue({
             }
             return this.counter += 1;
         },
-        selezionaImagine() {
-            console.log(this.images.index);
+        controll() {
+            if (this.counter === this.images.index) {
+                console.log(this.counter);
+            }
         }
+
+
+    },
+
+    mounted() {
+
+        window.addEventListener("keyup", () => {
+            var tasto = event.key;
+            if (tasto === "ArrowRight") {
+                this.next();
+            } else if (tasto === "ArrowLeft") {
+                this.prev();
+            }
+        })
+
 
     }
 })

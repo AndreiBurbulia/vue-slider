@@ -42,9 +42,6 @@
     align-items: center;
     justify-content: space-around;
 }
-.pallini .cerchio{
-    height: 20px;
-    width: 20px;
-    background-color: lime;
-    border-radius: 50%;
-}
+/* .pallini i{
+    color: red;
+} */
