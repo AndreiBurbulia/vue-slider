@@ -28,11 +28,6 @@ const app = new Vue({
                 return this.counter = 0;
             }
             return this.counter += 1;
-        },
-        controll() {
-            if (this.counter === this.images.index) {
-                console.log(this.counter);
-            }
         }
 
 
