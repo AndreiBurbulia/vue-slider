@@ -11,9 +11,7 @@ const app = new Vue({
             "./assets/img/img_3.jpg",
             "./assets/img/img_4.jpg",
             "./assets/img/img_5.jpg"
-        ],
-        prova: "palliniBianchi",
-        selezione: document.querySelectorAll(".cerchio"),
+        ]
     },
 
     methods:
@@ -30,12 +28,9 @@ const app = new Vue({
             }
             return this.counter += 1;
         }
-
-
     },
 
     mounted() {
-
         window.addEventListener("keyup", () => {
             var tasto = event.key;
             if (tasto === "ArrowRight") {
@@ -44,7 +39,5 @@ const app = new Vue({
                 this.prev();
             }
         })
-
-
     }
 })

@@ -17,11 +17,11 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="arrow" @click="prev" v-on:keyup.37="prova">
+            <div class="arrow" @click="prev">
                 <i class="fas fa-chevron-left"></i>
             </div>
             <img :src="images[counter]" alt="">
-            <div class="arrow" @click="next" v-on:keyup.39="prova">
+            <div class="arrow" @click="next">
                 <i class="fas fa-chevron-right"></i>
             </div>
             <div class="pallini">
