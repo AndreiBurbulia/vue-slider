@@ -39,5 +39,9 @@ const app = new Vue({
                 this.prev();
             }
         })
+    },
+
+    mounted() {
+        setInterval(this.next, 3000)
     }
 })
