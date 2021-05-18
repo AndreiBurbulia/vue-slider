@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Slider</title>
+
+    <!-- Import icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="arrow" @click="prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <img :src="images[counter]" alt="">
+            <div class="arrow" @click="next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="pallini">
+                <div class="cerchio" v-for="cerchio in images.length-1" @click="selezionaImagine">{{cerhio}}</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Main js -->
+    <script src="./assets/JS/main.js"></script>
+</body>
+
+</html>
