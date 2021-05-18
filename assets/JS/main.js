@@ -12,7 +12,8 @@ const app = new Vue({
             "./assets/img/img_4.jpg",
             "./assets/img/img_5.jpg"
         ],
-        prova: "white"
+        prova: "palliniBianchi",
+        selezione: document.querySelectorAll(".cerchio"),
     },
 
     methods:

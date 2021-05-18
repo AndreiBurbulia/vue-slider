@@ -25,8 +25,8 @@
                 <i class="fas fa-chevron-right"></i>
             </div>
             <div class="pallini">
-                <!-- <div class="cerchio" ></div> -->
-                <i class="fas fa-circle" :style="{color: prova}" v-for="(image,index) in images.length" @click="counter = index" v-if=""></i>
+                <!-- <div class="cerchio" v-for="(image,index) in images.length" @click="counter = index" :class="(index == counter ) ? 'active' : ''"></div> -->
+                <i class="fas fa-circle" v-for="(image,index) in images.length" @click="counter = index" :class="(index == counter ) ? 'active' : ''"></i>
             </div>
         </div>
     </div>
