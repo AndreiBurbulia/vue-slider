@@ -31,8 +31,8 @@ const app = new Vue({
     },
 
     mounted() {
-        window.addEventListener("keyup", () => {
-            var tasto = event.key;
+        window.addEventListener("keyup", (e) => {
+            var tasto = e.key;
             if (tasto === "ArrowRight") {
                 this.next();
             } else if (tasto === "ArrowLeft") {
@@ -40,8 +40,9 @@ const app = new Vue({
             }
         })
     },
-
+    /*
     mounted() {
         setInterval(this.next, 3000)
     }
+    */
 })
